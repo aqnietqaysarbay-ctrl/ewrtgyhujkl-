@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(255, 249, 242);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        background-color: rgb(255, 249, 242);
+        width: 1020px;
+        height: 550px;
+        display: flex;
+        gap: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        background-color: white;
+        border: 1.5px solid rgb(70, 37, 17);
+        border-bottom: 3px solid rgb(70, 37, 17);
+        border-right: 3px solid rgb(70, 37, 17);
+        border-radius: 15px;
+        padding: 10px 20px 10px 20px;
+        gap: 30px;
+        box-sizing: border-box;
+      }
+      .right {
+        flex: 1;
+        background-color: white;
+        border: 1.5px solid rgb(70, 37, 17);
+        border-bottom: 3px solid rgb(70, 37, 17);
+        border-right: 3px solid rgb(70, 37, 17);
+        border-radius: 15px;
+        padding: 10px 20px 10px 20px;
+      }
+      .topleft {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 275px;
+        border-bottom: 1.5px solid rgb(70, 37, 17);
+      }
+      .in {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+      }
+      .centerleft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: pink;
+        height: 340px;
+        border: 1.5px solid rgb(70, 37, 17);
+        border-bottom: 3px solid rgb(70, 37, 17);
+        border-right: 3px solid rgb(70, 37, 17);
+        border-radius: 15px;
+      }
+      .center2left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      button {
+        padding: 5px 15px 5px 15px;
+        border-radius: 50px;
+        /* width: 150px; */
+        height: 30px;
+        border: 1.5px solid rgb(70, 37, 17);
+        background-color: white;
+        font-size: 14px;
+        color: rgb(70, 37, 17);
+      }
+      .cards {
+        display: grid;
+        grid-template-areas:
+          "card1"
+          "card2"
+          "card3"
+          "card4";
+        grid-template-columns: 300px;
+        grid-template-rows: 100px 100px 100px 100px;
+        gap: 20px;
+      }
+      .card1 {
+        display: flex;
+        flex-direction: row;
+        grid-area: card1;
+        border: 1.5px solid rgb(70, 37, 17);
+        border-bottom: 3px solid rgb(70, 37, 17);
+        border-right: 3px solid rgb(70, 37, 17);
+        border-radius: 15px;
+        overflow: hidden;
+        padding-left: 17px;
+        font-size: 12px;
+        gap: 120px;
+      }
+      .card2 {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        gap: 130px;
+        grid-area: card2;
+        border: 1.5px solid rgb(70, 37, 17);
+        border-bottom: 3px solid rgb(70, 37, 17);
+        border-right: 3px solid rgb(70, 37, 17);
+        border-radius: 15px;
+        overflow: hidden;
+        padding-left: 17px;
+        font-size: 12px;
+      }
+      .card3 {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        font-size: 12px;
+        gap: 120px;
+        grid-area: card3;
+        border: 1.5px solid rgb(70, 37, 17);
+        border-bottom: 3px solid rgb(70, 37, 17);
+        border-right: 3px solid rgb(70, 37, 17);
+        border-radius: 15px;
+        overflow: hidden;
+        padding-left: 17px;
+      }
+      .card4 {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        font-size: 12px;
+        gap: 120px;
+        grid-area: card4;
+        border: 1.5px solid rgb(70, 37, 17);
+        border-bottom: 3px solid rgb(70, 37, 17);
+        border-right: 3px solid rgb(70, 37, 17);
+        border-radius: 15px;
+        overflow: hidden;
+        padding-left: 17px;
+      }
+      .bottomleft {
+        border-top: 1.5px solid rgb(70, 37, 17);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 170px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="topleft">
+          <div class="in">
+            <button>All Categories</button>
+            <p>Hide Mastered</p>
+          </div>
+          <button>Shuffle</button>
+        </div>
+        <div class="centerleft">
+          <button>Web Development</button>
+          <h1>What does HTML stand for?</h1>
+          <p>Click to reveal answer</p>
+        </div>
+        <div class="center2left">
+          <button
+            style="
+              background: rgb(255, 200, 0);
+              border: 1.5px solid rgb(70, 37, 17);
+              border-bottom: 3px solid rgb(70, 37, 17);
+              border-right: 3px solid rgb(70, 37, 17);
+            "
+          >
+            I Know This
+          </button>
+          <button
+            style="
+              border: 1.5px solid rgb(70, 37, 17);
+              border-bottom: 3px solid rgb(70, 37, 17);
+              border-right: 3px solid rgb(70, 37, 17);
+            "
+          >
+            Reset Progress
+          </button>
+        </div>
+        <div class="bottomleft">
+          <button>Previous</button>
+          <p>Card 1 of 40</p>
+          <button>Next</button>
+        </div>
+      </div>
+      <div class="right">
+        <h3>Study Statistics</h3>
+        <div class="cards">
+          <div class="card1">
+            <div class="inside">
+              <p>Total Cards</p>
+              <h1>40</h1>
+            </div>
+            <img
+              style="object-fit: cover"
+              src="Screenshot 2026-01-13 at 12.01.54.png"
+              alt=""
+            />
+          </div>
+          <div class="card2">
+            <div class="inside">
+              <p>Mastered</p>
+              <h1>11</h1>
+            </div>
+            <img
+              style="object-fit: cover"
+              src="Screenshot 2026-01-13 at 12.02.03.png"
+              alt=""
+            />
+          </div>
+          <div class="card3">
+            <div class="inside">
+              <p>In Progress</p>
+              <h1>21</h1>
+            </div>
+            <img
+              style="object-fit: cover"
+              src="Screenshot 2026-01-13 at 12.02.12.png"
+              alt=""
+            />
+          </div>
+          <div class="card4">
+            <div class="inside">
+              <p>Not Started</p>
+              <h1>8</h1>
+            </div>
+            <img
+              style="object-fit: cover"
+              src="Screenshot 2026-01-13 at 12.02.20.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
